@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Tales Laguardia - Contato</title>
+</head>
+    <body>
+        <main>
+            <aside class="navegacao-topo">
+                <h1 class="nome-tales"> TALES LAGUARDIA </h1>
+                <ul>
+                    <li><a href="home">Home</a></li>
+                    <li><a href="bio">Sobre mim</a></li>
+                    <li><a href="contact-me">Contato</a></li>
+                </ul>
+            </aside>
+            <h1 class="subtitulo-texto">Contato</h1>
+
+            <div class="formulario-contato">
+
+                <%= form_for @message, url: create_message_url do |f| %>
+                <%= notice %>
+                <%= @message.errors.full_messages.join(', ') %>
+
+                <%= f.text_field :name, placeholder: 'Nome', :class => "nome" %>
+                <%= f.email_field :email, placeholder: 'E-mail', :class => "email" %>
+                <%= f.text_area :body, placeholder: 'Mensagem', :class => "texto-area" %>
+                <%= f.submit 'Enviar', :class => "botao-enviar" %>
+                <% end %>
+
+            </div>
+        </main>
+        <footer class="rodape-pagina">
+            Tales Laguardia 2019 &copy;
+            <ul class="icones-redes-sociais">
+                <li>
+                    <a href="https://github.com/taleslfm" class="github" data-tooltip="Veja meus projetos opensource">
+                        Github
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/tales-laguardia-a59791b9/" class="linkedin" data-tooltip="Veja meu currículo">
+                        LinkedIn
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </body>
+</html>

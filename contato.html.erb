@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Tales Laguardia - Contato</title>
+</head>
+<body>
+    <main>
+        <aside class="navegacao-topo">
+            <ul>
+                <h1 class="nome-tales"> TALES LAGUARDIA </h1>
+                <li><a href="home">Home</a></li>
+                <li><a href="bio">Sobre mim</a></li>
+                <li><a href="contato">Contato</a></li>
+            </ul>
+        </aside>
+        <h1 class="subtitulo-texto">Contato</h1>
+        <div class="container">
+            <form>
+                <fieldset>
+                    <legend>Seus dados</legend>
+                    <label class="com-icone" for="nome">Nome completo</label>
+                    <input id="nome" type="text" name="nome" required autofocus pattern="[A-Za-z ']{4,}" title="O nome precisa ter pelo menos 4 caracteres">
+                    <label class="com-icone" for="email">E-mail</label>
+                    <input id="email" type="email" name="email" required placeholder="seu@email.com">
+                </fieldset>
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" cols="60" rows="10" placeholder="Digite aqui sua mensagem"></textarea>
+                <button type="submit" mailto:"" >Enviar mensagem</button>
+            </form>
+        </div>
+    </main>
+    <footer class="rodape-pagina">
+        Tales Laguardia 2019 &copy;
+        <ul class="icones-redes-sociais">
+            <li>
+                <a href="https://github.com/taleslfm" class="github" data-tooltip="Veja meus projetos opensource">
+                    Github
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/tales-laguardia-a59791b9/" class="linkedin" data-tooltip="Veja meu currículo">
+                    LinkedIn
+                </a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>
